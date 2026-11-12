@@ -49,6 +49,16 @@ class Tenant(BaseModel):
         assert isinstance(data, dict), "Expected a dictionary of tenants"
         return {key: Tenant(**tenant) for key, tenant in data.items()}
     
+class TenantSettlement(BaseModel):
+    tenant: str
+    apartment_settlement: str
+    year: int
+    month: int
+    rent_pln: float
+    bills_pln: float
+    total_due_pln: float
+    transfers_pln: float
+    balance_pln: float
 
 class Transfer(BaseModel):
     amount_pln: float
