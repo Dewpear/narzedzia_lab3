@@ -51,7 +51,7 @@ class Tenant(BaseModel):
     
 class TenantSettlement(BaseModel):
     tenant: str
-    apartment_settlement: str
+    apart_settlement: str
     year: int
     month: int
     rent_pln: float
