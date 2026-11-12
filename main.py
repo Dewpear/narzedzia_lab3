@@ -10,6 +10,7 @@ class ApartmentSettlement(BaseModel):
     total_bills: float
     total_rent: float
     amount_due: float
+    #test
 
 
 class Parameters(BaseModel):
